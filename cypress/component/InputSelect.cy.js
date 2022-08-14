@@ -5,7 +5,7 @@ describe("InputSelect.cy.js", () => {
   it("Render options", () => {
     cy.mount(SelectInput, {
       propsData: {
-        value: "",
+        value: null,
         options: [
           {
             text: "Test",
@@ -31,7 +31,10 @@ describe("InputSelect.cy.js", () => {
   it("Render options with value", () => {
     cy.mount(SelectInput, {
       propsData: {
-        value: 1,
+        value: {
+          text: "Test",
+          value: 1,
+        },
         options: [
           {
             text: "Test",

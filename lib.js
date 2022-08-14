@@ -15,7 +15,7 @@ let GlobalVue = null;
 if (typeof window !== "undefined") {
   GlobalVue = window.Vue;
 } else if (typeof global !== "undefined") {
-  GlobalVue = global.vue;
+  GlobalVue = global.Vue;
 }
 
 if (GlobalVue) {

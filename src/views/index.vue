@@ -1,7 +1,11 @@
 <template>
   <SelectInput
     v-model="selectedItem"
-    :options="[{ value: 1, text: 'Text' }]"
+    :options="[
+      { value: 1, text: 'Text' },
+      { value: 2, text: 'World' },
+      { value: 3, text: 'Value' },
+    ]"
     placeholder="Placeholder"
   />
 </template>
@@ -15,7 +19,7 @@ export default {
   },
 
   data: () => ({
-    selectedItem: "",
+    selectedItem: null,
   }),
 };
 </script>
